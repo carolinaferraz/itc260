@@ -45,6 +45,8 @@ class News extends CI_Controller {
 
     public function create()
     {
+        $this->config->set_item('title', 'Create News');
+        
         $this->load->helper('form');
         $this->load->library('form_validation');
 
