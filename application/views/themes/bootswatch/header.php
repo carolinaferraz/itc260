@@ -1,3 +1,5 @@
+<? //views/themes/bootswatch/header.php
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,9 +26,7 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
-			<li class="active"><a href="#" title="">Active Link</a></li>
-			<li><?=anchor('customer/mylist','Customers')?></li>
-			<li><?=anchor('customer/add','Add Customer')?></li>
+          <?=makeLinks($this->config->item('nav1'))?>
           </ul>
         </div>
       </div>
