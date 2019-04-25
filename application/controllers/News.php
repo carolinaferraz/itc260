@@ -67,7 +67,9 @@ class News extends CI_Controller {
             
             
             if(($slug = $this->news_model->set_news()) !== false) { //slug sent
-                feedback('data entered successfully', 'info');
+                $slug = $this->news_model->set_news();
+                if ($slug !== false) {
+                    feedback('data entered successufully!', 'info');
                 redirect('news/view/'. $slug);
 
             } else { //error
@@ -76,4 +78,4 @@ class News extends CI_Controller {
             }
         }
     }
-}
+    }} 
