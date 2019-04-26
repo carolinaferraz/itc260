@@ -279,3 +279,4 @@ ci/system/libraries/Xmlrpc.php
 ci/system/libraries/Xmlrpcs.php
 ci/system/libraries/Zip.php
 *.html
+.DS_Store
